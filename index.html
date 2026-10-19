@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a90f1b">
+  <title>Happy Dashain | Made by Pragyan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✺</span><span>MADE BY PRAGYAN</span></a>
+    <span class="top-note">शुभ दशैं · Happy Dashain</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="eyebrow">✦ A FESTIVAL OF LOVE, FAMILY & NEW BEGINNINGS ✦</p>
+        <p class="script">Happy</p>
+        <h1>Dashain</h1>
+        <p class="hero-copy">As we celebrate Dashain, may your home be filled with happiness,<br class="desktop"> good health, success and prosperity.</p>
+        <div class="ornament">──── ❀ ────</div>
+      </div>
+      <span class="kite kite-a">◇</span><span class="kite kite-b">◇</span>
+    </section>
+
+    <section class="main-area" id="welcome">
+      <div class="decor decor-left">🌺<br>🌾<br>🌺</div>
+      <div class="choice-card">
+        <div class="flower">❀</div>
+        <p class="small-heading">A LITTLE DASHAIN SURPRISE</p>
+        <h2>Are you a Sir or a Student?</h2>
+        <p class="subtext">Choose one to open your personal Dashain message.</p>
+        <div class="buttons">
+          <button class="choice-button" id="sirBtn" type="button"><span>♙</span> Sir</button>
+          <button class="choice-button" id="studentBtn" type="button"><span>◆</span> Student</button>
+        </div>
+        <p class="note">Made with respect and warm wishes by Pragyan.</p>
+      </div>
+      <div class="decor decor-right">Dashain<br>Tika<br>Jamara<br>♡</div>
+    </section>
+
+    <section class="hidden form-area" id="nameSection" aria-live="polite">
+      <div class="message-card">
+        <button class="back-button" id="backBtn" type="button">← Back</button>
+        <div class="flower">❀</div>
+        <p class="small-heading" id="formKicker">A PERSONAL GREETING</p>
+        <h2 id="formTitle">What's your name?</h2>
+        <p class="subtext" id="formHint">Enter your name to reveal your message.</p>
+        <form id="nameForm">
+          <label class="sr-only" for="nameInput">Your name</label>
+          <input id="nameInput" type="text" placeholder="Type your name here..." maxlength="60" required autocomplete="name">
+          <button class="submit-button" type="submit">Open my greeting ↗</button>
+        </form>
+        <p class="error hidden" id="errorMessage">I couldn't find that name on this little guest list. Check the spelling and try again.</p>
+      </div>
+    </section>
+
+    <section class="hidden form-area" id="resultSection" aria-live="polite">
+      <div class="message-card result-card">
+        <p class="small-heading">✦ A MESSAGE JUST FOR YOU ✦</p>
+        <div class="flower">❀</div>
+        <p class="script result-script" id="resultScript">Warm wishes</p>
+        <h2 id="resultTitle">Happy Dashain!</h2>
+        <p class="recipient" id="recipientLine"></p>
+        <div class="letter" id="letterText"></div>
+        <p class="signature">With warm wishes,<br><strong>Pragyan</strong></p>
+        <div class="result-buttons">
+          <button class="submit-button" id="copyBtn" type="button">Copy message ▣</button>
+          <button class="secondary-button" id="restartBtn" type="button">Start again</button>
+        </div>
+        <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="mountains">⌁　♧　⌁　♧　⌁</div>
+    <h2>शुभ दशैं</h2>
+    <p>Wishing you peace, joy and blessings throughout Dashain.</p>
+    <small>© <span id="year"></span> MADE BY PRAGYAN</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
